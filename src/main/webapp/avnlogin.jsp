@@ -4,7 +4,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>AVNLogin</title>
+  <title>Marslander</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
@@ -165,26 +165,24 @@ position: absolute;
 </div><br>
 <img src="logopost.jpg" alt="HTML5 Icon" style="width:325px;height:185px;position:absolute;left:60px;top:10px;">
 <b>
-<h1 style="color:#968370;font-size: 350%;position:absolute;left:460px;top:80px;">MARS COMMUNICATION</h1></b>
+<h1 style="color:#968370;font-size: 350%;position:absolute;left:460px;top:80px;">Marslander</h1></b>
 <br><br><br>
 <section class="wlp-login-message-content">
 <p><b>
 <i>
-<font color="darkorange">Help Desk</font>
+<font color="darkblue">Help Desk</font>
 </i>
 </b>
 <br><br>
 The Mars Help Desk, can assist with issues and concerns regarding:
 <br><br>
 <i>
-<font color="orange"> Troubleshooting problems</font>
+<font color="orange"> All customer queries</font>
 </i>
 <p>
--Moves, adds and changes to telephone equipment or service.<br>
--New service, voicemail, caller menus, special calling features and plans, caller ID, music on hold, international dialing.<br>
--Fax machines and codes, headsets, conference calls, speaker phone rental.<br>
--Call accounting and billling - Telephone bill login.<br>
--We also manage plans, orders, service, billing and trouble shooting for college provided cellphones and smartphones.<br><br>
+-Queries on Marslander services.<br>
+-Call for accounting and billing.<br>
+-We also manage plans, orders, service, billing and trouble shooting the problems in realtime.<br><br>
 <i>
 <font color="darkorange"> CONTACT US</font>
 </i>
@@ -203,7 +201,7 @@ The Mars Help Desk, can assist with issues and concerns regarding:
   <div class="toggle">
    </div>
     <div class="form">
-    <h2>Login to your account</h2>
+    <h2>User Login</h2>
     <form action="avnlogin" method="post">
       <input type="text" name="username" placeholder="Username"/>
       <input type="password" name="userpassword" placeholder="Password"/>
