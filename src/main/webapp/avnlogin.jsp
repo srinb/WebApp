@@ -16,7 +16,7 @@
 <style>
 body {
   background: #e9e9e9;
-  color: #666666;
+  color: #add8e6;
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -177,24 +177,24 @@ position: absolute;
 The Mars Help Desk, can assist with issues and concerns regarding:
 <br><br>
 <i>
-<font color="orange"> All customer queries</font>
+<font color="darkblue"> All customer queries</font>
 </i>
 <p>
 -Queries on Marslander services.<br>
 -Call for accounting and billing.<br>
 -We also manage plans, orders, service, billing and trouble shooting the problems in realtime.<br><br>
 <i>
-<font color="darkorange"> CONTACT US</font>
+<font color="darkblue"> CONTACT US</font>
 </i>
 <br><br>
 <ul style="margin-left:20px">
-<li>Call 123-456-7890</li>
+<li>Call 123-456-MARS</li>
 <li>
 <a href="mailto:compliant@devopsunion.com">Email</a>
 </li><br>
  Wholesale Customer Care:
 <br>
- 333-333-3333 or 555-555-5555
+ 888-333-3333 or 888-555-5555
 </p>
 </section>
 <div class="module form-module">
