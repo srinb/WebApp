@@ -62,7 +62,7 @@ public class acat {
 	}
 
 	
-	@Test(priority = 2)
+	/*@Test(priority = 2)
 	public void navigation() {
 		driver.findElement(By.partialLinkText("Home")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -88,6 +88,6 @@ public class acat {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		//driver.findElement(By.xpath("//h1[text()='JUPITER COMMUNICATION']")).isDisplayed();
 		driver.quit();
-	}
+	}*/
 
 }
