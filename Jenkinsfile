@@ -27,7 +27,9 @@ node {
     stage('Publish build info') {
         server.publishBuildInfo buildInfo
     }
-}
+
+
+stages {
     stage("Compile war") {
      steps {
         build 'compile-web-app'
@@ -38,5 +40,6 @@ node {
         build 'deploy-to-QA'
        }
     }
-    
+}
 	 
+}
