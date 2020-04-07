@@ -1,0 +1,15 @@
+pipeline {                
+    agent any                
+    stages {
+        stage ("Static code analysis") {        
+            steps {
+                build 'Static-code-analysis'    
+            }
+        }
+        stage ("Compile Web App") {        
+            steps {
+                build 'compile-web-app'    
+            }
+        }
+    }
+}
