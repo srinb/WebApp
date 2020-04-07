@@ -1,4 +1,4 @@
-pipeline {
+//pipeline {
 node {
     // Get Artifactory server instance, defined in the Artifactory Plugin administration page.
     def server = Artifactory.server "artifactory1"
@@ -27,20 +27,15 @@ node {
     stage('Publish build info') {
         server.publishBuildInfo buildInfo
     }
-
-
-stages {
-    stage("Compile war") {
-     steps {
-        build 'compile-web-app'
-       }
+    
+	stage('Compile war') {
+        buildInfo = rtMaven.run pom: 'pom.xml', goals: 'compile'
     }
-    stage("deploy to QA") {
-      steps {
-        build 'deploy-to-QA'
-       }
-    }
-}
+    
+	stage('deploy to QA') {
+        buildInfo = rtMaven.run pom: 'pom.xml', goals: 'package'
+
+	}
 	 
 }
-}
+//}
