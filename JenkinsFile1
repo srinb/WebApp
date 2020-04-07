@@ -1,14 +1,14 @@
 pipeline {                
     agent any                
     stages {
-        stage ("Static code analysis") {        
-            steps {
-                build 'Static-code-analysis'    
-            }
-        }
         stage ("Compile Web App") {        
             steps {
                 build 'compile-web-app'    
+            }
+        }
+        stage ("deploy to QA") {        
+            steps {
+                build 'deploy-to-QA'    
             }
         }
     }
