@@ -27,11 +27,16 @@ node {
     stage('Publish build info') {
         server.publishBuildInfo buildInfo
     }
-    stage('Compile war') {
-        buildInfo = rtMaven.run pom: 'pom.xml', goals: 'compile'
+}
+    stage("Compile war") {
+     steps {
+        build 'compile-web-app'
+       }
     }
-    stage('deploy to QA') {
-        buildInfo = rtMaven.run pom: 'pom.xml', goals: 'package'
+    stage("deploy to QA") {
+      steps {
+        build 'deploy-to-QA'
+       }
     }
-    }
+    
 	 
