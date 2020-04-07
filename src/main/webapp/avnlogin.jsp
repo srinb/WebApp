@@ -182,6 +182,7 @@ The Mars Help Desk, can assist with issues and concerns regarding :
 <p>
 -Queries on Marslander services.<br>
 -Call for accounting and billing.<br>
+-Call for statement reports.<br>
 -We also manage plans, orders, service, billing and trouble shooting the problems in realtime.<br><br>
 <i>
 <font color="darkblue"> CONTACT US</font>
