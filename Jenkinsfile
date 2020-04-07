@@ -1,4 +1,4 @@
-
+pipeline {
 node {
     // Get Artifactory server instance, defined in the Artifactory Plugin administration page.
     def server = Artifactory.server "artifactory1"
@@ -42,4 +42,5 @@ stages {
     }
 }
 	 
+}
 }
