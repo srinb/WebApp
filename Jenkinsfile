@@ -30,5 +30,8 @@ node {
     stage('Compile war') {
         buildInfo = rtMaven.run pom: 'pom.xml', goals: 'compile'
     }
+    stage('deploy to QA') {
+        buildInfo = rtMaven.run pom: 'pom.xml', goals: 'package'
+    }
     }
 	 
