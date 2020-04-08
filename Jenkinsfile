@@ -26,7 +26,7 @@ node {
 
     stage('Publish build info') {
         server.publishBuildInfo buildInfo
-    }
+    }  
     
 	stage('Compile war') {
         buildInfo = rtMaven.run pom: 'pom.xml', goals: 'compile'
