@@ -1,6 +1,11 @@
 pipeline {                
     agent any                
     stages {
+       stage ("Static code analysis") {        
+            steps {
+                build 'Static-code-analysis'    
+            }
+        }
         stage ("Compile Web App") {        
             steps {
                 build 'compile-web-app'    
@@ -11,5 +16,31 @@ pipeline {
                 build 'deploy-to-QA'    
             }
         }
+        stage ("Artifactory-Deployment") {        
+            steps {
+                build 'artifactory-deployment'    
+            }
+        }
+        stage ("functional testing") {        
+            steps {
+                build 'functional-testing'    
+            }
+        }
+        stage ("Performance testing") {        
+            steps {
+                build 'Performance-Testing'    
+            }
+        }
+        stage ("deploy to PROD") {        
+            steps {
+                build 'deploy-to-prod'    
+            }
+        }
+         stage ("deploy to PROD") {        
+            steps {
+                build 'sanity-test-on-production'    
+            }
+        }
+        
     }
 }
