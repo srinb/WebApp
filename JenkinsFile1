@@ -36,7 +36,7 @@ pipeline {
                 build 'deploy-to-prod'    
             }
         }
-         stage ("deploy to PROD") {        
+         stage ("PROD sanity test") {        
             steps {
                 build 'sanity-test-on-production'    
             }
